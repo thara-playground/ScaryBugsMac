@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7719AE6C1AEF482E00131861 /* ScaryBugData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7719AE6B1AEF482E00131861 /* ScaryBugData.swift */; };
+		7719AE6E1AEF48F400131861 /* ScaryBugDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7719AE6D1AEF48F400131861 /* ScaryBugDoc.swift */; };
 		778A5C681AEEFE3700B54B88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778A5C671AEEFE3700B54B88 /* AppDelegate.swift */; };
 		778A5C6A1AEEFE3700B54B88 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 778A5C691AEEFE3700B54B88 /* Images.xcassets */; };
 		778A5C6D1AEEFE3700B54B88 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 778A5C6B1AEEFE3700B54B88 /* MainMenu.xib */; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7719AE6B1AEF482E00131861 /* ScaryBugData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaryBugData.swift; sourceTree = "<group>"; };
+		7719AE6D1AEF48F400131861 /* ScaryBugDoc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaryBugDoc.swift; sourceTree = "<group>"; };
 		778A5C621AEEFE3700B54B88 /* ScaryBugsMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScaryBugsMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		778A5C661AEEFE3700B54B88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		778A5C671AEEFE3700B54B88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +60,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7719AE691AEF476300131861 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				778A5C671AEEFE3700B54B88 /* AppDelegate.swift */,
+				778A5C6B1AEEFE3700B54B88 /* MainMenu.xib */,
+				778A5C821AEEFF2000B54B88 /* MasterViewController.swift */,
+				778A5C831AEEFF2000B54B88 /* MasterViewController.xib */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		7719AE6A1AEF47A300131861 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7719AE6B1AEF482E00131861 /* ScaryBugData.swift */,
+				7719AE6D1AEF48F400131861 /* ScaryBugDoc.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		778A5C591AEEFE3700B54B88 = {
 			isa = PBXGroup;
 			children = (
@@ -77,12 +101,10 @@
 		778A5C641AEEFE3700B54B88 /* ScaryBugsMac */ = {
 			isa = PBXGroup;
 			children = (
-				778A5C671AEEFE3700B54B88 /* AppDelegate.swift */,
+				7719AE6A1AEF47A300131861 /* Model */,
+				7719AE691AEF476300131861 /* GUI */,
 				778A5C691AEEFE3700B54B88 /* Images.xcassets */,
-				778A5C6B1AEEFE3700B54B88 /* MainMenu.xib */,
 				778A5C651AEEFE3700B54B88 /* Supporting Files */,
-				778A5C821AEEFF2000B54B88 /* MasterViewController.swift */,
-				778A5C831AEEFF2000B54B88 /* MasterViewController.xib */,
 			);
 			path = ScaryBugsMac;
 			sourceTree = "<group>";
@@ -212,7 +234,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7719AE6C1AEF482E00131861 /* ScaryBugData.swift in Sources */,
 				778A5C841AEEFF2000B54B88 /* MasterViewController.swift in Sources */,
+				7719AE6E1AEF48F400131861 /* ScaryBugDoc.swift in Sources */,
 				778A5C681AEEFE3700B54B88 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,6 +428,7 @@
 				778A5C7E1AEEFE3800B54B88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		778A5C7F1AEEFE3800B54B88 /* Build configuration list for PBXNativeTarget "ScaryBugsMacTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +437,7 @@
 				778A5C811AEEFE3800B54B88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

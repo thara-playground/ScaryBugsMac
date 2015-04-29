@@ -18,8 +18,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         self.masterViewController = MasterViewController(nibName: "MasterViewController", bundle: nil)
+        self.masterViewController.setupSampleBugs()
         
         self.window.contentView.addSubview(self.masterViewController.view)
+
         self.masterViewController.view.frame = (window.contentView as! NSView).bounds
     }
 
