@@ -6,20 +6,24 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="MasterViewController" customModule="ScaryBugsMac" customModuleProvider="target">
             <connections>
+                <outlet property="bugImageView" destination="K26-G8-Frj" id="n7b-PK-wwN"/>
+                <outlet property="bugRating" destination="Cmq-CK-8QB" id="D6x-dB-dHl"/>
+                <outlet property="bugTitleView" destination="ydb-dO-peN" id="Jgp-QP-k8c"/>
+                <outlet property="bugsTableView" destination="1HF-nu-M4U" id="vA8-1s-4bd"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="Hz6-mo-xeY">
-            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <rect key="frame" x="0.0" y="-2" width="574" height="438"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <scrollView autohidesScrollers="YES" horizontalLineScroll="34" horizontalPageScroll="10" verticalLineScroll="34" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="6Mp-1B-a3P">
-                    <rect key="frame" x="20" y="38" width="249" height="208"/>
+                    <rect key="frame" x="20" y="91" width="249" height="324"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <clipView key="contentView" id="vTO-Ql-BTj">
-                        <rect key="frame" x="1" y="1" width="247" height="206"/>
+                        <rect key="frame" x="1" y="1" width="247" height="322"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="32" rowSizeStyle="automatic" viewBased="YES" id="1HF-nu-M4U">
@@ -86,10 +90,85 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </scroller>
                 </scrollView>
+                <textField verticalHuggingPriority="750" id="ydb-dO-peN">
+                    <rect key="frame" x="307" y="368" width="247" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="cfq-SH-U45">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <action selector="bugTitleDidEndEdit:" target="-2" id="RZj-uD-KnT"/>
+                    </connections>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="kit-sy-H8c">
+                    <rect key="frame" x="305" y="398" width="52" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Name" id="gL8-xy-ata">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="tes-Pq-KD9">
+                    <rect key="frame" x="305" y="343" width="52" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Rating" id="1wd-bQ-4QL">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="K26-G8-Frj">
+                    <rect key="frame" x="304" y="48" width="259" height="245"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" id="48h-9K-N5Y"/>
+                </imageView>
+                <customView id="Cmq-CK-8QB" customClass="EDStarRating">
+                    <rect key="frame" x="307" y="298" width="253" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </customView>
+                <button verticalHuggingPriority="750" id="wI8-t8-HLR">
+                    <rect key="frame" x="212" y="61" width="24" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSAddTemplate" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="DYL-Fa-IoK">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="addBug:" target="-2" id="JCu-kz-v3o"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" id="PgF-vB-puQ">
+                    <rect key="frame" x="245" y="61" width="24" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSRemoveTemplate" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="b9S-Wx-jKk">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="deleteBug:" target="-2" id="Ll9-zG-iQI"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" id="LT6-jN-Uen">
+                    <rect key="frame" x="361" y="13" width="139" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="Change Picture" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fTd-zp-sSl">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="changePicture:" target="-2" id="p2D-Xy-3rk"/>
+                    </connections>
+                </button>
             </subviews>
+            <point key="canvasLocation" x="342" y="415"/>
         </customView>
     </objects>
     <resources>
         <image name="NSActionTemplate" width="14" height="14"/>
+        <image name="NSAddTemplate" width="11" height="11"/>
+        <image name="NSRemoveTemplate" width="11" height="11"/>
     </resources>
 </document>

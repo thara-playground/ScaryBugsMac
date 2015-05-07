@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		7719AE6C1AEF482E00131861 /* ScaryBugData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7719AE6B1AEF482E00131861 /* ScaryBugData.swift */; };
 		7719AE6E1AEF48F400131861 /* ScaryBugDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7719AE6D1AEF48F400131861 /* ScaryBugDoc.swift */; };
+		776586861AF2F44200539813 /* shockedface2_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 776586831AF2F44200539813 /* shockedface2_empty.png */; };
+		776586871AF2F44200539813 /* shockedface2_full.png in Resources */ = {isa = PBXBuildFile; fileRef = 776586841AF2F44200539813 /* shockedface2_full.png */; };
+		776586881AF2F44200539813 /* shockedface2_half.png in Resources */ = {isa = PBXBuildFile; fileRef = 776586851AF2F44200539813 /* shockedface2_half.png */; };
+		7765868F1AF2F48000539813 /* EDStarRating.m in Sources */ = {isa = PBXBuildFile; fileRef = 7765868C1AF2F48000539813 /* EDStarRating.m */; };
+		776586941AF2F4F500539813 /* NSImage+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 776586931AF2F4F500539813 /* NSImage+Extras.m */; };
 		778A5C681AEEFE3700B54B88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778A5C671AEEFE3700B54B88 /* AppDelegate.swift */; };
 		778A5C6A1AEEFE3700B54B88 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 778A5C691AEEFE3700B54B88 /* Images.xcassets */; };
 		778A5C6D1AEEFE3700B54B88 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 778A5C6B1AEEFE3700B54B88 /* MainMenu.xib */; };
@@ -30,6 +35,14 @@
 /* Begin PBXFileReference section */
 		7719AE6B1AEF482E00131861 /* ScaryBugData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaryBugData.swift; sourceTree = "<group>"; };
 		7719AE6D1AEF48F400131861 /* ScaryBugDoc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaryBugDoc.swift; sourceTree = "<group>"; };
+		776586831AF2F44200539813 /* shockedface2_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shockedface2_empty.png; sourceTree = "<group>"; };
+		776586841AF2F44200539813 /* shockedface2_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shockedface2_full.png; sourceTree = "<group>"; };
+		776586851AF2F44200539813 /* shockedface2_half.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shockedface2_half.png; sourceTree = "<group>"; };
+		7765868A1AF2F47F00539813 /* ScaryBugsMac-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScaryBugsMac-Bridging-Header.h"; sourceTree = "<group>"; };
+		7765868B1AF2F48000539813 /* EDStarRating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDStarRating.h; sourceTree = "<group>"; };
+		7765868C1AF2F48000539813 /* EDStarRating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDStarRating.m; sourceTree = "<group>"; };
+		776586921AF2F4F500539813 /* NSImage+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+Extras.h"; sourceTree = "<group>"; };
+		776586931AF2F4F500539813 /* NSImage+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+Extras.m"; sourceTree = "<group>"; };
 		778A5C621AEEFE3700B54B88 /* ScaryBugsMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScaryBugsMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		778A5C661AEEFE3700B54B88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		778A5C671AEEFE3700B54B88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +93,34 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		776586821AF2F3FB00539813 /* Art */ = {
+			isa = PBXGroup;
+			children = (
+				776586831AF2F44200539813 /* shockedface2_empty.png */,
+				776586841AF2F44200539813 /* shockedface2_full.png */,
+				776586851AF2F44200539813 /* shockedface2_half.png */,
+			);
+			name = Art;
+			sourceTree = "<group>";
+		};
+		776586891AF2F45500539813 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7765868B1AF2F48000539813 /* EDStarRating.h */,
+				7765868C1AF2F48000539813 /* EDStarRating.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		776586911AF2F4D500539813 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				776586921AF2F4F500539813 /* NSImage+Extras.h */,
+				776586931AF2F4F500539813 /* NSImage+Extras.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		778A5C591AEEFE3700B54B88 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +142,9 @@
 		778A5C641AEEFE3700B54B88 /* ScaryBugsMac */ = {
 			isa = PBXGroup;
 			children = (
+				776586821AF2F3FB00539813 /* Art */,
+				776586911AF2F4D500539813 /* Helpers */,
+				776586891AF2F45500539813 /* Views */,
 				7719AE6A1AEF47A300131861 /* Model */,
 				7719AE691AEF476300131861 /* GUI */,
 				778A5C691AEEFE3700B54B88 /* Images.xcassets */,
@@ -112,6 +156,7 @@
 		778A5C651AEEFE3700B54B88 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7765868A1AF2F47F00539813 /* ScaryBugsMac-Bridging-Header.h */,
 				778A5C661AEEFE3700B54B88 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -215,6 +260,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				778A5C6A1AEEFE3700B54B88 /* Images.xcassets in Resources */,
+				776586861AF2F44200539813 /* shockedface2_empty.png in Resources */,
+				776586881AF2F44200539813 /* shockedface2_half.png in Resources */,
+				776586871AF2F44200539813 /* shockedface2_full.png in Resources */,
 				778A5C6D1AEEFE3700B54B88 /* MainMenu.xib in Resources */,
 				778A5C851AEEFF2000B54B88 /* MasterViewController.xib in Resources */,
 			);
@@ -236,8 +284,10 @@
 			files = (
 				7719AE6C1AEF482E00131861 /* ScaryBugData.swift in Sources */,
 				778A5C841AEEFF2000B54B88 /* MasterViewController.swift in Sources */,
+				7765868F1AF2F48000539813 /* EDStarRating.m in Sources */,
 				7719AE6E1AEF48F400131861 /* ScaryBugDoc.swift in Sources */,
 				778A5C681AEEFE3700B54B88 /* AppDelegate.swift in Sources */,
+				776586941AF2F4F500539813 /* NSImage+Extras.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,10 +405,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = ScaryBugsMac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ScaryBugsMac/ScaryBugsMac-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -366,10 +419,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = ScaryBugsMac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ScaryBugsMac/ScaryBugsMac-Bridging-Header.h";
 			};
 			name = Release;
 		};
