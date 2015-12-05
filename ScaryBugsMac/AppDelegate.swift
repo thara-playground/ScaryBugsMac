@@ -20,9 +20,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         self.masterViewController = MasterViewController(nibName: "MasterViewController", bundle: nil)
         self.masterViewController.setupSampleBugs()
         
-        self.window.contentView.addSubview(self.masterViewController.view)
+        self.window.contentView!.addSubview(self.masterViewController.view)
 
-        self.masterViewController.view.frame = (window.contentView as! NSView).bounds
+        self.masterViewController.view.frame = window.contentView!.bounds
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {

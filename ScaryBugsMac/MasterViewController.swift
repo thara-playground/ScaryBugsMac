@@ -106,7 +106,7 @@ extension MasterViewController {
     }
     
     @IBAction func deleteBug(sender: AnyObject) {
-        if let selectedDoc = self.selectedBugDoc() {
+        if let _ = self.selectedBugDoc() {
             self.bugs.removeAtIndex(self.bugsTableView.selectedRow)
             
             self.bugsTableView.removeRowsAtIndexes(NSIndexSet(index: self.bugsTableView.selectedRow), withAnimation: NSTableViewAnimationOptions.SlideRight)
@@ -116,7 +116,7 @@ extension MasterViewController {
     }
     
     @IBAction func changePicture(sender: AnyObject) {
-        if let selectedDoc = self.selectedBugDoc() {
+        if let _ = self.selectedBugDoc() {
             IKPictureTaker().beginPictureTakerSheetForWindow(self.view.window, withDelegate: self, didEndSelector: "pictureTakerDidEnd:returnCode:contextInfo:", contextInfo: nil)
         }
     }
