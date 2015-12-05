@@ -142,7 +142,7 @@ extension MasterViewController: NSTableViewDataSource {
     }
     
     func tableView(tableView: NSTableView, viewForTableColumn tableColumn: NSTableColumn?, row: Int) -> NSView? {
-        var cellView: NSTableCellView = tableView.makeViewWithIdentifier(tableColumn!.identifier, owner: self) as! NSTableCellView
+        let cellView: NSTableCellView = tableView.makeViewWithIdentifier(tableColumn!.identifier, owner: self) as! NSTableCellView
         if tableColumn!.identifier == "BugColumn" {
             let bugDoc = self.bugs[row]
             cellView.imageView!.image = bugDoc.thumbImage
